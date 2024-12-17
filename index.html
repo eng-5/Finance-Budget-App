@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="budget.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="budget__header" id="head">
+        <div class="container">
+            <p class="budget__header-paragraph">Available Budget in <Span class="budget__header-date">April 2024</Span></p>
+            <h2 class="budget__header-heading"><span class="budget__header-sign">+</span>0.00</h2>
+            <div class="budget__header__income big-btn">
+                <div class="budget__header__income-text">INCOME</div>
+                <div class="budget__header__income-number">0.00</div>
+            </div>
+        <div class="budget__header__expense big-btn">
+            <div class="budget__header__expense-text">EXPENSES</div>
+            <div class="budget__header__expense-flex">
+                <div class="budget__header__expense-number">0.00</div>
+                <div class="budget__header__expense-percentage">0%</div>
+            </div>
+        </div>
+        </div>
+        
+    </header>
+    <main>
+        <section class="input__section">
+            <form action="#" class="input__section-form">
+                <select name="input__section-selector" id="input__section-selector" class="input__section-selector">
+                    <option value="inc" selected>+</option>
+                    <option value="exp">-</option>
+                </select>
+                <input type="text" placeholder="Add description" class="input__section-description">
+                <input type="text" placeholder="Amount" class="input__section-value">
+                <button class="button" type="submit">submit</button>
+            </form>
+        </section>
+        <section class="expenditure__details">
+            <div class="expenditure__details-income">
+                <h3 class="expenditure__details-income-heading">INCOME</h3>
+                <div class="appendChild-income">
+                    <!-- used to develop the Javascript -->
+                    <!-- <div class="expenditure__card__income" id="inc-0">
+                        <p class="expenditure__card__income-description">Website project</p>
+                        <div class="expenditure__card__income-flex">
+                            <div class="expenditure__card__income-price">+ 2500.00</div>
+                            <div class="expenditure__card__income-price-delete" id="delete">X</div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="expenditure__details-expense">
+                <h3 class="expenditure__details-expense-heading">EXPENSES</h3>
+                <div class="appendChild-expense">
+                    <!-- used to develop the expense column -->
+                    <!-- <div class="expenditure__card__expense" id="exp-0">
+                        <p class="expenditure__card__expense-description">Website project</p>
+                        <div class="expenditure__card__expense-flex">
+                            <div class="expenditure__card__expense-price">- 2500.00</div>
+                            <div class="expenditure__card__expense-price-percentage">- 25%</div>
+                            <div class="expenditure__card__expense-price-delete" id="delete">X</div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="budget.js"></script>
+</body>
+</html>
